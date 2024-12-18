@@ -1,0 +1,66 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0;
+    margin: 100px auto;
+  }
+  
+  .fan-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .fan {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    animation: center;
+    justify-content: center;
+    align-items: center;
+    animation: spin 2s linear infinite;
+  }
+  
+  .blade {
+    position: absolute;
+    width: 400px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform-origin: center center;
+    animation: rotateBlades 0.5 linear infinite;
+    animation: 0ms;
+  }
+  
+  .blade:nth-child(1) {
+    transform: rotate(0deg);
+  }
+  
+  .blade:nth-child(2) {
+    transform: rotate(90deg);
+  }
+  
+  .blade:nth-child(3) {
+    transform: rotate(180deg);
+  }
+  
+  .blade:nth-child(4) {
+    transform: rotate(270deg);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

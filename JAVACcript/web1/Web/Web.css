@@ -1,0 +1,191 @@
+body{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    overflow: auto;
+  }
+.square{
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 200px;
+    display: grid;
+    height: 230px;
+    width: 90%;
+}
+.navbar a {
+    float: right;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+    padding-right: 2%;
+  }
+  .navbar a:hover {
+    background-color: #6069e7;
+  }
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+.page1{
+    height: 90vh;
+    width: 100%;
+    display: block;
+    display: flex;
+}
+.paragraph{
+    height: 400px;
+    width: 400px;
+    padding-left: 20%;
+    display: block;   
+    justify-items:start;
+    padding-top: 2%;
+    font-family: serif;
+}
+.paragraph p{
+    font-size: 25px;
+}
+.image{
+    overflow: hidden;
+    padding-left: 10%;
+    border-radius: 10px;
+}
+.button{
+    height: 70px;
+    width: 90%;
+    display: block;
+    text-align: start;
+    border: 2px solid rgb(30, 10, 206);
+    border-radius: 50px;
+}
+#Click{
+    padding-left: 5%;
+    color: rgb(30, 10, 206);
+    cursor: pointer;
+}
+.page2{
+    height: 90vh;
+    width: 100%;
+    display: block;
+    display: flex;
+}
+.paragraph2{
+    height: 200px;
+    width: 400px;
+    padding: 15% 15%;
+    margin-top: 7%;
+    display: block;   
+    justify-items:start;
+    padding-top: 2%;
+    font-family: serif;
+}
+.paragraph2 p{
+    font-size: 25px;
+}
+.image2{
+    overflow: hidden;
+    padding-left: 10%;
+    border-radius: 10px;
+}
+.button2{
+    height: 70px;
+    width: 90%;
+    display: block;
+    text-align: start;
+    border: 2px solid rgb(30, 10, 206);
+    border-radius: 50px;
+}
+.button3{
+    height: 70px;
+    width: 60%;
+    display: block;
+    text-align: start;
+    border: 2px solid rgb(30, 10, 206);
+    border-radius: 50px;
+}
+#Click1{
+    text-align: center;
+    padding-left: 2%;
+    font-size: 25px;
+    padding-left: 4%;
+    color: rgb(30, 10, 206);
+    cursor: pointer;
+}
+.Grid-box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+}
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.container{
+    background-color: white;
+    display: flex;
+    gap: 150px;
+    height: 450px;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+#heading{
+    font-size: 50px;
+}
+.c-box{
+    color: blue;
+    font-size: 25px;
+}
+.c-box:hover{
+    color: rgb(74, 149, 178);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.alphabet{
+    height: 25vh;
+    width: 40%;
+    display: grid;
+    justify-content: center;
+    padding-left: 100px;
+    gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+}
+.item{
+    border: 2px solid blue;
+    display: grid;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+.item:hover{
+    background-color: skyblue;
+    cursor: pointer;
+}
+.Search-Bar{
+    height: 50px;
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 100px;
+    align-content: center;
+    /* margin-right: 80px; */
+
+    /* background-image: url("data:image/png;base64,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"); */
+
+
+}
+.search-icon{
+    padding:15px;
+    margin-left: 550px;
+    align-items: center;
+}
